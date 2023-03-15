@@ -25,6 +25,7 @@ if place:
         temperatures = [dict['main']['temp'] for dict in filtered_data]
         dates = [dict['dt_txt'] for dict in filtered_data]
         figure = px.line(x=dates, y=temperatures)
+
         figure.update_layout(
             xaxis_title="Dates",
             yaxis_title="Temperatures",
